@@ -35,7 +35,7 @@ defmodule Sigma.Mixfile do
   defp package do
     [# These are the default files included in the package
      name: :sigma,
-     files: ["lib", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+     files: ["lib", "mix.exs", "README*", "LICENSE*"],
      maintainers: ["Sergio Tapia"],
      licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/sergiotapia/sigma"}]
