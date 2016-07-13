@@ -1,5 +1,8 @@
 defmodule Sigma.Parsers.StatusPageIO do
+  require Logger
+
   def status(body) do
+    Logger.info "Sigma: Parsing statuspage.io status page."
     cond do
       Floki.find(body, ".page-status span.status") |> Floki.text |> String.trim == "All Systems Operational" ->
         "Operational"
