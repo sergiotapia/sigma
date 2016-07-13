@@ -24,7 +24,7 @@ defmodule Sigma do
       :status_io ->
         Sigma.Parsers.StatusIO.status(body)
       _ ->
-        "Unkown"
+        "Uknown"
     end
   end
 
