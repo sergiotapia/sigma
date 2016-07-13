@@ -35,7 +35,7 @@ defmodule Sigma do
     "Unknown"
   end
 
-  def process({:error, %HTTPoison.Error{reason: _}}) do
+  def process(_) do
     Logger.info "Sigma: Unknown HTTP error."
     "Unknown"
   end
