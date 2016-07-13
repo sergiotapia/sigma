@@ -1,5 +1,4 @@
 defmodule Sigma.Parsers.StatusIO do
-
   def status(body) do
     cond do
       Floki.find(body, "#statusio_status_bar .col-md-8") |> Floki.text |> String.trim == "All Systems Operational" ->
